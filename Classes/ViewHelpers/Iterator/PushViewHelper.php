@@ -66,7 +66,7 @@ class PushViewHelper extends AbstractViewHelper
             : $arguments['subject'];
         $add = $arguments['add'];
         $key = $arguments['key'];
-        if ($key) {
+        if (isset($key)) {
             $subject[$key] = $add;
         } else {
             $subject[] = $add;
